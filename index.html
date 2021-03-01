@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AOS LIBRARY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- /AOS LIBRARY -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Spectral&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -43,14 +46,21 @@
                                 href="#">PROPOSITOS</a></li>
                     </ul>
                 </div>
+                <div class="container-fluid p-0 ">
+                    <div class="section2 d-flex align-items-center justify-content-center">
+                        <div class="">
+                            <h1>PROGRAMACIÓN</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
             <main class="col-lg offset-3 two p-0">
                 <div class="section1 p-0 text-white">
                     <div class="row justify-content-center">
                         <h1 class="text-white">EL HERALDO</h1>
                     </div>
-                    <div class="d-flex position-relative flex-column align-items-center bienvenida p-0"
-                        style="top:25%;">
+                    <div data-aos="zoom-in"
+                        class="d-flex position-relative flex-column align-items-center bienvenida p-0" style="top:25%;">
                         <div class="row justify-content-center pb-3">
                             <h2 class="border p-4 shadow h1">BIENVENIDO</h2>
                         </div>
@@ -69,7 +79,7 @@
                 </div>
                 <div class="container-fluid" style="height:660px">
                     <div class="row ">
-                        <div class="col-lg" style="background-color: #212529;">
+                        <div data-aos="zoom-in" class="col-lg" style="background-color: #212529;">
                             <div class="">
                                 <h1>TITULO</h1>
                             </div>
@@ -86,7 +96,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg section3"></div>
-                        <div class="col-lg" style="background-color: #343A40;">
+                        <div data-aos="zoom-in" class="col-lg" style="background-color: #343A40;">
                             <div class="">
                                 <h1>TITULO</h1>
                             </div>
@@ -101,7 +111,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg" style="background-color: #495057;">
+                        <div data-aos="zoom-in" class="col-lg" style="background-color: #495057;">
                             <div class="">
                                 <h1>TITULO</h1>
                             </div>
@@ -118,25 +128,24 @@
                     </div>
                 </div>
                 <div class="container-fluid">
-                    <div class="row justify-content-center p-3" style=" background-color: black;">
+                    <div class="row justify-content-center p-3 bg-dark">
                         <div class="btn border text-white">Ver videos</div>
                     </div>
                 </div>
-                <div class="container-fluid section5" style="height:606px;">
-                    <div class="row mx-auto">
-                        <div class="col-lg bg-white">
-                            <h1>Titulo</h1>
-                            <div>
-                                <span class="text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                                    eum corrupti
-                                    iusto quis maxime quibusdam blanditiis reiciendis, adipisci exercitationem
-                                    reprehenderit assumenda, distinctio, rem dolore doloremque unde excepturi suscipit
-                                    accusamus iure.
-                                    Consequuntur repellendus quae voluptatibus, amet officiis totam minima ratione
-                                    reiciendis rerum. Cupiditate laboriosam pariatur modi voluptate rem. Ratione
-                                    obcaecati officiis nulla alias aliquid. Omnis maxime commodi modi quam, libero
-                                    sed.</span>
-                            </div>
+                <div class="container-fluid section5 d-flex align-items-center justify-content-center"
+                    style="height:606px;">
+                    <div class="col-lg bg-white">
+                        <h1 class="text-center">Titulo</h1>
+                        <div>
+                            <span class="text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                                eum corrupti
+                                iusto quis maxime quibusdam blanditiis reiciendis, adipisci exercitationem
+                                reprehenderit assumenda, distinctio, rem dolore doloremque unde excepturi suscipit
+                                accusamus iure.
+                                Consequuntur repellendus quae voluptatibus, amet officiis totam minima ratione
+                                reiciendis rerum. Cupiditate laboriosam pariatur modi voluptate rem. Ratione
+                                obcaecati officiis nulla alias aliquid. Omnis maxime commodi modi quam, libero
+                                sed.</span>
                         </div>
                     </div>
                 </div>
@@ -172,11 +181,11 @@
                     </div>
                 </div>
                 <div class="container-fluid">
-                    <div class="row justify-content-center p-3" style=" background-color: black;">
+                    <div class="row justify-content-center p-3 bg-dark">
                         <div class="btn border text-white">Ver más</div>
                     </div>
                 </div>
-                <footer class="container-fluid bg-dark footer-desktop">
+                <footer class="container-fluid footer-desktop" style="background-color: #212529;">
                     <div class="row p-0 m-0 align-content-center justify-content-center text-start footer-navbar">
                         <div>
                             <a href="/">
@@ -203,6 +212,12 @@
             </main>
         </div>
     </div>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- /AOS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
