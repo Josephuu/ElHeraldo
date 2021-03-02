@@ -91,3 +91,13 @@ footer div a {
 .footer-navbar {
     height: 370px;
 }
+
+.videos-h1-color{
+    color: black;
+    font-family: 'Rozha One' , serif;
+}
+.videos-position-text{
+    position: relative;
+    left:70px;
+    right:300px;
+}
