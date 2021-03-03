@@ -5,15 +5,16 @@ html {
     overflow-x: hidden; 
 }
 body{
+    background-color: #343a40;
     font-family: 'Rozha One', serif;
 }
 .one {
-    height: 351vh;
+    height:auto;
 }
 
 .two {
     background-color: grey;
-    height: 100vh;
+    height: auto;
 }
 
 .container-fluid {
