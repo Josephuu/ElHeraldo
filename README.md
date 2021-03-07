@@ -1,3 +1,7 @@
 # ElHeraldo
+////    On BACKEND folder    /////
+//Dependencies
+npm i express morgan express-handlebars handlebars@4.5.3 dotenv
 
-Agregame los las librerias que usas GORDO
+//Dev Dependencies
+npm i nodemon -D
