@@ -1,4 +1,5 @@
 const [Schema,model] = require('mongoose');
+const mongoosePaginate = require('mongoose-paginate-v2');
 
 const newsSchema = new Schema({
     title:{type:String},
@@ -10,4 +11,5 @@ const newsSchema = new Schema({
     timestamps:true
 });
 
+newsSchema.plugin(mongoosePaginate);
 module.exports = model('news',newsSchema);
