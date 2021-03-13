@@ -1,0 +1,16 @@
+<!-- Podcast -->
+<div class="row justify-content-center" style="background-color: #212529;;">
+    <h1 class="videos-h1-color text-white ">PODCAST</h1>
+</div>
+<div class="container-fluid">
+    {{#each podcastDoc}}
+    <div class="row" style="background-color: #212529;">
+        <div id="videos" data-aos="zoom-in" class="col-lg p-0" style="background-color: #212529;">
+            <div class="col-lg d-flex flex-column">
+                {{spotifyFrame}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+<!-- /Podcast -->

@@ -17,73 +17,41 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="/style/index.css">
-    <!-- <link rel="stylesheet"
-        href="https://firebasestorage.googleapis.com/v0/b/heraldo-52523.appspot.com/o/public%2Fcss%2Findex.css?alt=media&token=58ce5adc-68d3-4d20-a3bd-2a47d3339118"> -->
-    <title>ELHERALDO</title>
+
+    <title>EL HERALDO</title>
 </head>
 
-<body>
-    <div class="container-fluid">
+{{>header}}
+{{{body}}}
+{{>footer}}
 
-        <div class="row">
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- /AOS -->
 
-            <div class="col-lg-3 d-none d-lg-block fixed-top text-white text-center p-0 one ">
+<!-- Sidebar -->
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
 
-            {{>header}}
-            <main class="col-lg offset-sm-0 offset-md-0 offset-lg-3 offset-xl-3 two p-0 ">
-                <a class="" href="/"><img class="position-fixed " src="/icons/wsp.svg" alt="wsp"
-                        style="top:550px;right:10px; z-index:1;"></a>
-                <div class="container-fluid d-lg-none d-xl-none fixed-top offset-sm-0 offset-md-0 offset-lg-3 offset-xl-3 p-0"
-                    style="height:61px;">
-                    <iframe src="https://d1uzdx1j6g4d0a.cloudfront.net/players/superior/17/174641/" border="0"
-                        scrolling="no" frameborder="0" allowTransparency="true" width="100%" height="60"></iframe>
-                </div>
-                                    <!-- SIDEBAR -->
-                    <div id="mySidenav" class="sidenav bg-dark text-center">
-                        <div class="row">
-                            <div class="d-flex col-lg rounded justify-content-center pb-4">
-                                <img class="" src="/icons/ejemplologo.jpeg" alt="Logotipo"
-                                    style="width:60px; height:auto; border-radius:100px;">
-                            </div>
-                        </div>
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<!-- Sidebar -->
 
-                        <a href="javascript:void(0)" class="closebtn text-white" onclick="closeNav()">&times;</a>
-                        <a class="text-white pb-2" href="#videos">PODCAST</a>
-                        <a class="text-white pb-2" href="#noticias">NOTICIAS</a>
-                        <a class="text-white pb-2" href="#historia">NUESTRA HISTORIA</a>
-                        <a class="text-white pb-2" href="#">PROPOSITOS</a>
-                        <div class="container-fluid p-0 ">
-                            <div class="section2 d-flex align-items-center justify-content-center">
-                                <div data-aos="zoom-out">
-                                    <a class="h1 text-white text-decoration-none" href="/programacion.html">
-                                        PROGRAMACION
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="text-white" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-                    <!-- /SIDEBAR -->
-                </div>
-                {{{body}}}
 
-                {{>footer}}
-            </main>
-        </div>
-    </div>
 
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <!-- /AOS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
