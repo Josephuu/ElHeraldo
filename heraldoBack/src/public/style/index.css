@@ -60,6 +60,7 @@ body{
 .section-news{
     background-size: fill;
     width:100%;
+    height:240px;
 }
 main h1{
         font-family: 'Special Elite', cursive;
