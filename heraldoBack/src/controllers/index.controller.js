@@ -23,7 +23,7 @@ indexCtrl.renderIndex= async(req,res)=>{
         totalPages,
         sort});
     const podcastDoc = PODCAST.docs
-
+    
     const ARTICLE = await article.paginate({},{
         limit,
         page,
@@ -32,8 +32,13 @@ indexCtrl.renderIndex= async(req,res)=>{
         totalPages,
         sort});
     const articleDoc = ARTICLE.docs
+    
+    var paginatedIndex= 
+        {articleDoc,ARTICLE}
+    ;
 
-    res.render('index',[{podcastDoc,PODCAST},{articleDoc,ARTICLE}])
+    res.render('index',paginatedIndex)
+
 };
 
 module.exports = indexCtrl;

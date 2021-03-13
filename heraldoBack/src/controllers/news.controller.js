@@ -24,8 +24,7 @@ newsCtrl.renderNoticias = async(req, res)=>{
         sort});
     const articleDoc = ARTICLE.docs
 
-    res.render('index',{articleDoc,ARTICLE});
-    res.render('noticias');
+    res.render('noticias',{articleDoc,ARTICLE});
 };
 
 module.exports = newsCtrl;
