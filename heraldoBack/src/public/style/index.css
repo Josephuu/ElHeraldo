@@ -58,10 +58,8 @@ body{
     height:220px;
 }
 .section-news{
-    background-attachment:fixed;
-    background-size: cover;
+    background-size: fill;
     width:100%;
-    height:220px;
 }
 main h1{
         font-family: 'Special Elite', cursive;
