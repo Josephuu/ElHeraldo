@@ -6,9 +6,12 @@ const newsSchema = new Schema({
     image: {type:String},
     description: {type:String},
     content: {type:String},
-    author: {type:String}
-},{
-    timestamps:true
+    author: {type:String},
+    createdAt: {
+        type: Date,
+        default: new Date()
+    }
+
 });
 
 newsSchema.plugin(mongoosePaginate);
