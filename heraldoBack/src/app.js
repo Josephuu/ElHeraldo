@@ -3,7 +3,8 @@ const path = require('path');
 const exphbs= require('express-handlebars');
 const morgan = require('morgan');
 const handlebars = require('handlebars');
-const admin = require('firebase-admin');
+var helpers = require('handlebars-helpers')();
+
 //Initializations
 const app = express()
 

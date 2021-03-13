@@ -9,7 +9,7 @@ const { renderPodcast } = require('../controllers/podcast.controller');
 
 router.get('/', renderIndex);
 
-router.get('/noticia-especifica',renderNoticia);
+router.get('/noticias/:id',renderNoticia);
 
 router.get('/noticias', renderNoticias);
 
