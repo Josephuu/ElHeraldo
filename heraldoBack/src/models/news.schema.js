@@ -6,13 +6,10 @@ const newsSchema = new Schema({
     image: {type:String},
     description: {type:String},
     content: {type:String},
-    author: {type:String},
-    createdAt: {
-        type: Date,
-        default: new Date()
-    }
+    author: {type:String}
+    },{timestamps: true}
 
-});
+);
 
 newsSchema.plugin(mongoosePaginate);
 module.exports = model('news',newsSchema);

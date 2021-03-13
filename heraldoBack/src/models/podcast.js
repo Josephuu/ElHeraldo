@@ -4,7 +4,7 @@ const mongoosePaginate = require('mongoose-paginate-v2');
 const podcastSchema = new Schema({
     spotifyFrame: {type:String}
     },
-    {timestamps: true},
+    {timestamps: true}
 );
 
 podcastSchema.plugin(mongoosePaginate);
