@@ -1,16 +1,25 @@
 <div class="container-fluid">
-    <div class="row">
+    <div class="row ">
 
-        <div class="col-lg p-0  bg-white">
-            <img class="section-news" src="{{New.image}}" alt="{{New.title}}"
-                style="height:90vh;background-size: cover;">
+        <div class="col-lg bg-light">
             <div class="container-fluid p-4">
-                <h1 class="videos-h1-color text-center">{{New.title}}</h1>
-                <h6 class="videos-h1-color">Fecha: {{moment New.createdAt format="DD/MM/YYYY"}}</h4>
-                    <span class="text-dark">
-                        {{New.content}}
-                    </span>
-                    <h5 class="videos-h1-color">Autor: {{New.author}}</h3>
+                <h1 class="videos-h1-color text-center mt-5">{{New.title}}</h1>
+
+                <div class="row">
+
+                    <div class="col-sm-5 col-md-5 col-lg-4 mb-3">
+                        <img class="section-news" src="{{New.image}}" alt="{{New.title}}" style="height:30vh;">
+                        <h6 class="videos-h1-color">Fecha: {{moment New.createdAt format="DD/MM/YYYY"}}</h6>
+                        <h6 class="videos-h1-color">Autor: {{New.author}}</h6>
+
+                    </div>
+
+                    <div class="col">
+                        <span class="text-dark">
+                            {{New.content}}
+                        </span>
+                    </div>
+                </div>
 
             </div>
         </div>
