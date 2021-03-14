@@ -36,10 +36,14 @@
 <script>
     function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
+        $('.overlay').addClass('active');
     }
 
     function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
+        $('#BotonCerrar, .overlay').on('click', function () {
+            $('.overlay').removeClass('active');
+            document.getElementById("mySidenav").style.width = "0";
+        });
     }
 </script>
 <!-- Sidebar -->
