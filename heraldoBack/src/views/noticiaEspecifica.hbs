@@ -2,20 +2,21 @@
     <div class="row ">
 
         <div class="col-lg" style="background-color: #dedcdc">
-            <div class="container-fluid p-4">
-                <h1 class="videos-h1-color text-center mt-5">{{New.title}}</h1>
+            <div class="container-fluid p-lg-5 p-sm-0">
+                <h1 class="videos-h1-color text-center pb-5">{{New.title}}</h1>
 
                 <div class="row">
 
-                    <div class="col-sm-5 col-md-5 col-lg-4 ">
+                    <div class="col-sm-7 col-md-5 col-lg-6 col-xl-5 mb-5">
                         <img class="" src="{{New.image}}" alt="{{New.title}}" style="height:250px; width:300px">
-                        <h6 class="videos-h1-color">Fecha: {{moment New.createdAt format="DD/MM/YYYY"}}</h6>
-                        <h6 class="videos-h1-color">Autor: {{New.author}}</h6>
+                        <h6 class="videos-h1-color">Fecha: {{moment New.createdAt
+                            format="DD/MM/YYYY"}}</h6>
+                        <h6 class="videos-h1-color ">Autor: {{New.author}}</h6>
                     </div>
 
 
                     <div class="col">
-                        <span class="videos-h1-color">
+                        <span class=" videos-h1-color">
                             {{{New.content}}}
                         </span>
                     </div>
@@ -23,6 +24,5 @@
 
             </div>
         </div>
-
     </div>
 </div>
