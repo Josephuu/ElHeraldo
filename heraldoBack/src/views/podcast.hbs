@@ -1,17 +1,20 @@
 <!-- Podcast -->
-<div class="row justify-content-center" style="background-color: #212529;;">
-    <h1 class="videos-h1-color text-white mt-5">PODCAST</h1>
-</div>
 <div class="container-fluid">
-    {{#each podcastDoc}}
-    <div class="row" style="background-color: #212529;">
-        <div id="videos" class="col-lg p-0" style="background-color: #212529;">
-            <div class="col-lg d-flex flex-column">
-                <iframe src="{{spotifyFrame}}" width="100%" height="158" frameborder="0" allowtransparency="true"
-                    allow="encrypted-media"></iframe>
+
+    <div class="row justify-content-center" style="background-color: #212529;">
+        <h1 class=" videos-h1-color text-white">PODCAST</h1>
+    </div>
+    <div class="container-fluid p-0">
+        {{#each podcastDoc}}
+        <div class="row" style="background-color: #212529;">
+            <div id="videos" class="col-lg" style="background-color: #212529;">
+                <div class="col-lg d-flex flex-column">
+                    <iframe src="{{spotifyFrame}}" width="100%" height="158" frameborder="0" allowtransparency="true"
+                        allow="encrypted-media"></iframe>
+                </div>
             </div>
         </div>
+        {{/each}}
     </div>
-    {{/each}}
 </div>
 <!-- /Podcast -->

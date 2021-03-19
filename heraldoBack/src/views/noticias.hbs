@@ -1,11 +1,14 @@
 <div class="container-fluid">
-    <div class="row mt-5">
+    <div class="row justify-content-center" style="background-color: #212529;">
+        <h1 class=" videos-h1-color text-white">PODCAST</h1>
+    </div>
+    <div class="row mt-sm-0 mt-md-0 mt-lg-0 mt-xl-0">
         {{#each articleDoc}}
-        <div class="col-sm-6 col-lg-4 p-0 bg-dark border border-white">
+        <div class="col-sm-6 col-lg-4 p-0 bg-light border border-white">
             <a class="" href="/noticias/{{_id}}"><img class="section-news" src={{image}} alt="{{title}}"></a>
             <div class="container p-4">
                 <h1 class="videos-h1-color" style="font-size:2rem;">{{title}}</h1>
-                <span class="text-white">
+                <span class="text-dark">
                     {{description}}
                 </span>
             </div>
