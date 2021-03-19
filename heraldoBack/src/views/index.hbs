@@ -1,17 +1,18 @@
 <!-- BIENVENIDA -->
 
 <div class="section1 p-0 text-white">
-    <div class="row justify-content-center">
-        <h1 class="text-white mt-3 pt-5">EL HERALDO</h1>
+    <div class="row justify-content-center mt-5 pt-4 mt-md-5 pt-md-4 pt-lg-0 mt-lg-0 pt-xl-0 mt-xl-0">
+        <h1 class="text-white">EL HERALDO</h1>
     </div>
-    <div data-aos="zoom-in" class="d-flex position-relative flex-column align-items-center bienvenida p-0"
-        style="top:60px;">
-        <div class="row justify-content-center pb-3">
-            <h1 class="border p-4 shadow videos-h1-color text-white">BIENVENIDO</h1>
+    <div data-aos="zoom-in" class="d-flex flex-column p-0 align-items-center justify-content-center"
+        style="height: 70vh;">
+        <div class="row  pb-3 mt-sm-5 pt-sm-3 mt-md-5 pt-md-3 mt-lg-0 pt-lg-0 mt-xl-0 pt-xl-0 p-lg-1 p-xl-1">
+            <h1 class="border p-sm-4 p-md-4 p-lg-5 p-xl-5 shadow videos-h1-color text-white ">BIENVENIDO</h1>
         </div>
-        <div class="row justify-content-center mx-auto">
+        <div class="row mt-3">
             <div class="col-lg pl-5 pr-5">
-                <span class="text-wrap">El Heraldo: La radio online que anuncia las virtudes de aquel que nos amó, ama y
+                <span class="text-wrap">El Heraldo: La
+                    radio online que anuncia las virtudes de aquel que nos amó, ama y
                     amará hasta el fin de los tiempos.</span>
             </div>
         </div>
@@ -89,17 +90,17 @@
 
 <!-- NOTICIAS -->
 
-<div class="container-fluid">
+<div class="container-fluid bg-dark">
     <div class="row justify-content-center p-0" style="background-color: #212529;">
         <h1 class="videos-h1-color text-white">NOTICIAS</h1>
     </div>
     <div id="noticias" class="row">
         {{#each articleDoc}}
-        <div class="col-sm-6 col-lg-4 p-0  bg-dark border border-white">
+        <div class="col-sm-6 col-lg-4 p-0  bg-light border border-white">
             <a class="" href="/noticias/{{_id}}"><img class="section-news" src={{image}} alt="Imagen"></a>
             <div class="container p-4">
                 <h1 class="videos-h1-color">{{title}}</h1>
-                <span class="text-white">
+                <span class="text-dark">
                     {{description}}
                 </span>
             </div>
